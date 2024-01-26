@@ -1,5 +1,4 @@
 import { Router } from "express";
-import UsersModel from "../Models/allUsersModel.js";
 import authenticateToken from "../Middelware/authentication.js";
 import { addtocart, removefromcart, getcart } from "../Controllers/cartFunctionsControllers.js";
 
