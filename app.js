@@ -29,7 +29,7 @@ app.use("/", usersRouter);
 app.use("/", cartFunctionsRouter);
 
 app.get("/",(req,res)=>{
-  res.json({env:process.env})
+  res.json('Hello')
 })
 
 
