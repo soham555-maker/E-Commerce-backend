@@ -28,6 +28,10 @@ app.use("/", getAllProductsRouter);
 app.use("/", usersRouter);
 app.use("/", cartFunctionsRouter);
 
+app.get("/",(req,res)=>{
+  res.json({env:process.env})
+})
+
 
 // API Creation
 app.listen(port, (error) => {
